@@ -1,0 +1,302 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    background: #fff;
+    color: #444;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+a {
+    color: #1bb1dc;
+    transition: 0.5s;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+
+#topbar {
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    transition: all 0.5s;
+  }
+  
+  #topbar .social-links {
+    text-align: right;
+  }
+  
+  #topbar .social-links a {
+    color: #b6a352;
+    padding: 4px 12px;
+    display: inline-block;
+    line-height: 1px;
+  }
+  
+  #topbar .social-links a:hover {
+    color: #1bb1dc;
+  }
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  
+  #header {
+    height: 110px;
+    transition: all 0.5s;
+    z-index: 997;
+    /* transition: all 0.5s; */
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+  
+  #header .logo img {
+    padding: 0;
+    margin: -70px 0;
+    max-height: 230px;
+  }
+  
+  .main-pages {
+    margin-top: 60px;
+  }
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+
+.main-nav,
+.main-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav > ul > li {
+  position: relative; 
+  float: left;
+}
+
+.main-nav a {
+  display: block;
+  position: relative;
+  color: #413e66;
+  padding: 10px 15px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.main-nav a:hover,
+.main-nav .active > a,
+.main-nav li:hover > a {
+  color: #1bb1dc;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+#intro {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+    background-size: cover;
+  }
+  
+  #intro .intro-info h2 {
+    color: #413e66;
+    margin-top: 160px;
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  #intro .intro-info h2 span {
+    color: #b6a352;
+  }
+  
+  #intro .intro-info .btn-get-started,
+  #intro .intro-info .btn-services {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #b6a352;
+    color: #fff;
+  }
+  
+  #intro .intro-info .btn-get-started:hover,
+  #intro .intro-info .btn-services:hover {
+    background: #b6a352;
+  }
+
+/*--------------------------------------------------------------
+# About us
+--------------------------------------------------------------*/
+
+#about {
+  padding: 80px 0;
+}
+
+#about .about-content {
+  padding-top: 40px;
+}
+
+#about .about-content h2 {
+  color: #413e66;
+}
+
+#about .about-img {
+  position: relative;
+  margin: 30px 30px 30px 30px;
+}
+
+#about .about-img img {
+  width: 100%;
+  border: 8px solid #fff;
+  transition: .5s;
+}
+
+/*--------------------------------------------------------------
+# Departments
+--------------------------------------------------------------*/
+
+
+.card{
+  min-height:170px;
+  margin: 0;
+  padding: 1.7rem 1.2rem; 
+  color:rgba(0,0,0,1);
+  letter-spacing: .05rem;
+  font-family: 'Oswald', sans-serif;
+  box-shadow: 0 0 21px rgba(0,0,0,.27);
+  border-radius: 3%;
+  font-weight: 300;
+  }
+  
+
+/* Why Us Section
+--------------------------------*/
+
+#why-us {
+  padding: 60px 0;
+}
+
+/****** call for Admissions ******/
+
+.contact-us{
+  width: 100%;
+  background: #2D2B46;
+  color: white;
+  font-size: 16px;
+  padding: 40px 0;
+  display: flex;
+}
+
+.contact-us .col-left{
+  width: 70%;
+  padding: 0 20px 0 200px;
+}
+
+.contact-us .col-left h3{
+  padding-bottom: 20px;
+}
+
+.contact-us .col-right{
+  flex: 1;
+  padding-top: 40px;
+  padding-left: 120px;
+}
+
+.contact-us .col-right .contact-here{
+  width: 180px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.contact-us .col-right .contact-here:hover{
+  background: lightseagreen;
+  border: 2px solid lightseagreen;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+/****** Faculty ******/
+
+.faculty .heading{
+  margin: 0 0 15px 0;
+  font-size: 36px;
+  color: #413E66;
+}
+
+.faculty .sub-heading{
+  margin: 0  0 50px;
+}
+
+.faculty{
+  margin:20px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faculty-cards{
+  display: flex;
+}
+
+
+.card .card-body i{
+  font-size: 12px;
+}
+
+/****** copyright ******/
+
+#footer{
+  display: flex;
+  justify-content: space-around;
+  background: #141224;
+}
+
+.copyright{
+  padding: 30px 0 30px 0;
+  color: white;
+  font-size: 15px;
+}
