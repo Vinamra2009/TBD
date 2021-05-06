@@ -65,7 +65,6 @@ h6 {
     height: 110px;
     transition: all 0.5s;
     z-index: 997;
-    /* transition: all 0.5s; */
     padding: 20px 0;
     position: fixed;
     left: 0;
@@ -135,8 +134,8 @@ h6 {
     color: #413e66;
     margin-top: 160px;
     margin-bottom: 40px;
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 50px;
+    font-weight: 900;
   }
   
   #intro .intro-info h2 span {
@@ -159,11 +158,6 @@ h6 {
     color: #fff;
   }
   
-  #intro .intro-info .btn-get-started:hover,
-  #intro .intro-info .btn-services:hover {
-    background: #b6a352;
-  }
-
 /*--------------------------------------------------------------
 # About us
 --------------------------------------------------------------*/
@@ -174,9 +168,6 @@ h6 {
 
 #about .about-content {
   padding-top: 40px;
-}
-
-#about .about-content h2 {
   color: #413e66;
 }
 
@@ -188,7 +179,6 @@ h6 {
 #about .about-img img {
   width: 100%;
   border: 8px solid #fff;
-  transition: .5s;
 }
 
 /*--------------------------------------------------------------
@@ -197,11 +187,8 @@ h6 {
 
 
 .card{
-  min-height:170px;
   margin: 0;
   padding: 1.7rem 1.2rem; 
-  color:rgba(0,0,0,1);
-  letter-spacing: .05rem;
   font-family: 'Oswald', sans-serif;
   box-shadow: 0 0 21px rgba(0,0,0,.27);
   border-radius: 3%;
@@ -259,48 +246,6 @@ h6 {
   cursor: pointer;
 }
 
-/****** Faculty ******/
-
-.faculty .heading{
-  margin: 0 0 15px 0;
-  font-size: 36px;
-  color: #413E66;
-}
-
-.faculty .sub-heading{
-  margin: 0  0 50px;
-}
-
-.faculty{
-  margin:20px 0 40px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.faculty-cards{
-  display: flex;
-}
-
-
-.card .card-body i{
-  font-size: 12px;
-}
-
-/****** copyright ******/
-
-#footer{
-  display: flex;
-  justify-content: space-around;
-  background: #141224;
-}
-
-.copyright{
-  padding: 30px 0 30px 0;
-  color: white;
-  font-size: 15px;
-}
-
 /* GALLERY */
 
 #portfolio-flters {
@@ -351,7 +296,6 @@ border:none;
 }
 .card-container{
 position: relative;
-
 padding: 0;
 margin: 0;
 }
@@ -367,6 +311,45 @@ justify-content: center; */
 height: 250px;
 object-fit: cover;
 }
-.spacing{
-padding: 10px;
+/****** Faculty ******/
+
+.faculty .heading{
+  margin: 0 0 15px 0;
+  font-size: 36px;
+  color: #413E66;
 }
+
+.faculty .sub-heading{
+  margin: 0  0 50px;
+}
+
+.faculty{
+  margin:20px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faculty-cards{
+  display: flex;
+}
+
+
+.card .card-body i{
+  font-size: 12px;
+}
+
+/****** copyright ******/
+
+#footer{
+  display: flex;
+  justify-content: space-around;
+  background: #141224;
+}
+
+.copyright{
+  padding: 30px 0 30px 0;
+  color: white;
+  font-size: 15px;
+}
+
