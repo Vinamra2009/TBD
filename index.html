@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>RNSIT</title>
+  <!-- viewport is the visible area and varies on device,initial-scale is the zoom level -->
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <!-- Favicons -->
@@ -16,14 +17,6 @@
   <!-- Bootstrap CSS File -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -33,7 +26,6 @@
         Header
         ============================-->
   <header id="header">
-
     <div id="topbar">
       <div class="container">
         <div class="social-links">
@@ -46,12 +38,9 @@
     </div>
 
     <div class="container">
-
       <div class="logo float-left">
-        <!-- <h1 class="text-light"><a href="#intro" class="scrollto"><span>RNSIT</span></a></h1> -->
         <a href="#header" class="scrollto"><img src="img/rnsit_logo.svg" alt="" class="img-fluid"></a>
       </div>
-
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#intro">Home</a></li>
@@ -62,7 +51,6 @@
           <li><a href="#footer">Contact Us</a></li>
         </ul>
       </nav><!-- .main-nav -->
-
     </div>
   </header><!-- #header -->
 
@@ -86,7 +74,6 @@
 
     </div>
   </section><!-- #intro -->
-
   <main id="main">
     <!--==========================
       About Us Section
@@ -135,21 +122,21 @@
         <br>
 
         <div class="card-deck">
-          <div class="card card border-primary mb-3">
+          <div class="card">
             <div class="card-header bg-transparent border-primary">CSE</div>
             <div class="card-body text-primary">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
           </div>
-          <div class="card card border-primary mb-3">
+          <div class="card">
             <div class="card-header bg-transparent border-success">CSE</div>
             <div class="card-body text-success">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
           </div>
-          <div class="card card border-danger mb-3">
+          <div class="card">
             <div class="card-header bg-transparent border-danger">CSE</div>
             <div class="card-body text-danger">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -159,21 +146,21 @@
         </div>
         <br>
         <div class="card-deck">
-          <div class="card card border-warning mb-3">
+          <div class="card">
             <div class="card-header bg-transparent border-warning">CSE</div>
             <div class="card-body text-warning">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
           </div>
-          <div class="card card border-dark mb-3">
+          <div class="card">
             <div class="card-header bg-transparent border-dark">CSE</div>
             <div class="card-body text-dark">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
           </div>
-          <div class="card card border-primary mb-3">
+          <div class="card">
             <div class="card-header bg-transparent border-primary">CSE</div>
             <div class="card-body text-primary">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -191,14 +178,11 @@
     ============================-->
     <section id="why-us" class="wow fadeIn">
       <div class="container">
-
         <header class="section-header">
           <h3>Our Mission</h3>
           <p>To impart quality education in Engineering, Technology and Management with a difference</p>
         </header>
-
         <div class="row">
-
           <div class="col-lg-6">
             <div class="why-us-img">
               <img src="img/why-us.jpg" alt="" class="img-fluid">
@@ -228,13 +212,9 @@
                   holders with better visibility
                 </li>
               </ul>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
     </section>
     <!-- Ends here -->
@@ -252,6 +232,44 @@
         <button class="contact-here">Contact here</button>
       </div>
     </div>
+
+    <!-- Gallery -->
+
+    <div class="container">
+      <ul id="portfolio-flters">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-app">Fest</li>
+        <li data-filter=".filter-card">Meets</li>
+      </ul>
+
+      <div class="row gallery filter-app">
+        <div class="col-lg-4 col-md-6 card card-container p-2">
+          <img class="card-img-top gallery-img" src="img/portfolio/app1.jpg" alt="Card image cap">
+          <div class="overlay">
+            <span class="text">Hello World</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 card card-container p-2">
+          <img class="card-img-top gallery-img" src="img/portfolio/app2.jpg" alt="Card image cap">
+          <div class="overlay">
+            <div class="text">Hello World</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 card card-container p-2">
+          <img class="card-img-top gallery-img" src="img/portfolio/app3.jpg" alt="Card image cap">
+          <div class="overlay">
+            <div class="text">Hello World</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 card card-container p-2">
+          <img class="card-img-top gallery-img" src="img/portfolio/app3.jpg" alt="Card image cap">
+          <div class="overlay">
+            <div class="text">Hello World</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Faculty -->
 
@@ -291,7 +309,6 @@
               <i>Chief Executive Officer</i>
             </div>
           </div>
-
         </div>
       </div>
     </div>
