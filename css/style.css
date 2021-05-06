@@ -300,3 +300,73 @@ h6 {
   color: white;
   font-size: 15px;
 }
+
+/* GALLERY */
+
+#portfolio-flters {
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#portfolio-flters li {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #413e66;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#portfolio-flters li:hover,
+#portfolio-flters li.filter-active {
+color: #1bb1dc;
+}
+
+.overlay {
+position: absolute;
+  top: 8px;
+  bottom: 10px;
+  left: 8px;
+  right: 12px;
+  height: 94%;
+  width: 96%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container:hover .overlay {
+opacity: 0.7;
+}
+.card{
+border:none;
+}
+.card-container{
+position: relative;
+
+padding: 0;
+margin: 0;
+}
+.text {
+color: white;
+font-size: 22px;
+font-weight: 300;
+/* display: flex;
+justify-content: center; */
+}
+
+.card-img-top {
+height: 250px;
+object-fit: cover;
+}
+.spacing{
+padding: 10px;
+}
