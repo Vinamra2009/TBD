@@ -1,23 +1,23 @@
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 
 body {
-    background: #fff;
-    color: #444;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+  background: #fff;
+  color: #444;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
 
 a {
-    color: #1bb1dc;
-    transition: 0.5s;
+  color: #1bb1dc;
+  transition: 0.5s;
 }
 
 p {
-    padding: 0;
-    margin: 0 0 30px 0;
-    
+  padding: 0;
+  margin: 0 0 30px 0;
 }
 
 h1,
@@ -32,60 +32,62 @@ h6 {
   padding: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
 
 #topbar {
-    padding: 0 0 10px 0;
-    font-size: 14px;
-    transition: all 0.5s;
-  }
-  
-  #topbar .social-links {
-    text-align: right;
-  }
-  
-  #topbar .social-links a {
-    color: #b6a352;
-    padding: 4px 12px;
-    display: inline-block;
-    line-height: 1px;
-  }
-  
-  #topbar .social-links a:hover {
-    color: #1bb1dc;
-  }
-  
-  /*--------------------------------------------------------------
+  padding: 0 0 10px 0;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+#topbar .social-links {
+  text-align: right;
+}
+
+#topbar .social-links a {
+  color: #b6a352;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+}
+
+#topbar .social-links a:hover {
+  color: #1bb1dc;
+}
+
+
+/*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
-  
-  #header {
-    height: 110px;
-    transition: all 0.5s;
-    z-index: 997;
-    padding: 20px 0;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-  }
-  
-  #header .logo img {
-    padding: 0;
-    margin: -70px 0;
-    max-height: 230px;
-  }
-  
-  .main-pages {
-    margin-top: 60px;
-  }
+
+#header {
+  height: 110px;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: -70px 0;
+  max-height: 230px;
+}
+
+.main-pages {
+  margin-top: 60px;
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-
 
 .main-nav,
 .main-nav * {
@@ -94,8 +96,8 @@ h6 {
   list-style: none;
 }
 
-.main-nav > ul > li {
-  position: relative; 
+.main-nav>ul>li {
+  position: relative;
   float: left;
 }
 
@@ -112,52 +114,54 @@ h6 {
 }
 
 .main-nav a:hover,
-.main-nav .active > a,
-.main-nav li:hover > a {
+.main-nav .active>a,
+.main-nav li:hover>a {
   color: #1bb1dc;
   text-decoration: none;
 }
+
 
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
 
 #intro {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
-    background-size: cover;
-  }
-  
-  #intro .intro-info h2 {
-    color: #413e66;
-    margin-top: 160px;
-    margin-bottom: 40px;
-    font-size: 50px;
-    font-weight: 900;
-  }
-  
-  #intro .intro-info h2 span {
-    color: #b6a352;
-  }
-  
-  #intro .intro-info .btn-get-started,
-  #intro .intro-info .btn-services {
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 32px;
-    border-radius: 4px;
-    transition: 0.5s;
-    color: #fff;
-    background: #b6a352;
-    color: #fff;
-  }
-  
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+#intro .intro-info h2 {
+  color: #413e66;
+  margin-top: 160px;
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+#intro .intro-info h2 span {
+  color: #b6a352;
+}
+
+#intro .intro-info .btn-get-started,
+#intro .intro-info .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #b6a352;
+  color: #fff;
+}
+
+
 /*--------------------------------------------------------------
 # About us
 --------------------------------------------------------------*/
@@ -181,20 +185,20 @@ h6 {
   border: 8px solid #fff;
 }
 
+
 /*--------------------------------------------------------------
 # Departments
 --------------------------------------------------------------*/
 
-
-.card{
+.card {
   margin: 0;
-  padding: 1.7rem 1.2rem; 
+  padding: 1.7rem 1.2rem;
   font-family: 'Oswald', sans-serif;
-  box-shadow: 0 0 21px rgba(0,0,0,.27);
+  box-shadow: 0 0 21px rgba(0, 0, 0, .27);
   border-radius: 3%;
   font-weight: 300;
-  }
-  
+}
+
 
 /* Why Us Section
 --------------------------------*/
@@ -203,9 +207,10 @@ h6 {
   padding: 60px 0;
 }
 
+
 /****** call for Admissions ******/
 
-.contact-us{
+.contact-us {
   width: 100%;
   background: #2D2B46;
   color: white;
@@ -214,22 +219,22 @@ h6 {
   display: flex;
 }
 
-.contact-us .col-left{
+.contact-us .col-left {
   width: 70%;
   padding: 0 20px 0 200px;
 }
 
-.contact-us .col-left h3{
+.contact-us .col-left h3 {
   padding-bottom: 20px;
 }
 
-.contact-us .col-right{
+.contact-us .col-right {
   flex: 1;
   padding-top: 40px;
   padding-left: 120px;
 }
 
-.contact-us .col-right .contact-here{
+.contact-us .col-right .contact-here {
   width: 180px;
   height: 40px;
   background: transparent;
@@ -239,12 +244,13 @@ h6 {
   font-size: 18px;
 }
 
-.contact-us .col-right .contact-here:hover{
+.contact-us .col-right .contact-here:hover {
   background: lightseagreen;
   border: 2px solid lightseagreen;
   transition: all 0.5s;
   cursor: pointer;
 }
+
 
 /* GALLERY */
 
@@ -269,11 +275,11 @@ h6 {
 
 #portfolio-flters li:hover,
 #portfolio-flters li.filter-active {
-color: #1bb1dc;
+  color: #1bb1dc;
 }
 
 .overlay {
-position: absolute;
+  position: absolute;
   top: 8px;
   bottom: 10px;
   left: 8px;
@@ -289,67 +295,71 @@ position: absolute;
 }
 
 .card-container:hover .overlay {
-opacity: 0.7;
+  opacity: 0.7;
 }
-.card{
-border:none;
+
+.card {
+  border: none;
 }
-.card-container{
-position: relative;
-padding: 0;
-margin: 0;
+
+.card-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
+
 .text {
-color: white;
-font-size: 22px;
-font-weight: 300;
-/* display: flex;
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+  /* display: flex;
 justify-content: center; */
 }
 
 .card-img-top {
-height: 250px;
-object-fit: cover;
+  height: 250px;
+  object-fit: cover;
 }
+
+
 /****** Faculty ******/
 
-.faculty .heading{
+.faculty .heading {
   margin: 0 0 15px 0;
   font-size: 36px;
   color: #413E66;
 }
 
-.faculty .sub-heading{
-  margin: 0  0 50px;
+.faculty .sub-heading {
+  margin: 0 0 50px;
 }
 
-.faculty{
-  margin:20px 0 40px 0;
+.faculty {
+  margin: 20px 0 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.faculty-cards{
+.faculty-cards {
   display: flex;
 }
 
-
-.card .card-body i{
+.card .card-body i {
   font-size: 12px;
 }
 
+
 /****** copyright ******/
 
-#footer{
+#footer {
   display: flex;
   justify-content: space-around;
   background: #141224;
 }
 
-.copyright{
+.copyright {
   padding: 30px 0 30px 0;
   color: white;
   font-size: 15px;
 }
-
