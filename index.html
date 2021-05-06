@@ -17,6 +17,10 @@
   <!-- Bootstrap CSS File -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -39,16 +43,16 @@
 
     <div class="container">
       <div class="logo float-left">
-        <a href="#header" class="scrollto"><img src="img/rnsit_logo.svg" alt="" class="img-fluid"></a>
+        <img src="img/rnsit_logo.svg" alt="RNSIT logo">
       </div>
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#intro">Home</a></li>
-          <li><a href="#about">Chairman</a></li>
-          <li><a href="#services">Office</a></li>
-          <li><a href="#team">Staff</a></li>
-          <li><a href="#department">Departments</a></li>
-          <li><a href="#footer">Contact Us</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#departments">Departments</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#event">Events</a></li>
+          <li><a href="#hod">HODs</a></li>
         </ul>
       </nav><!-- .main-nav -->
     </div>
@@ -83,16 +87,16 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-5 col-md-6">
+          <div class="col-lg-5">
             <div class="about-img">
               <img src="img/about-img.jpg" alt="">
             </div>
           </div>
 
-          <div class="col-lg-7 col-md-6">
+          <div class="col-lg-7">
             <div class="about-content">
-              <h2><strong>Chairman</strong></h2>
-              <h3>About</h3>
+              <h2><strong>About</strong></h2>
+              <h3>Chairman</h3>
               <p>Dr. Rama Nagappa Shetty is an Indian entrepreneur, philanthropist and an educationist. Rama Nagappa
                 Shetty formed the R N Shetty & Company, a partnership firm. During the next four years, the company took
                 up construction of three major projects - building bridges on Honnavar-Bangalore road. In 1966, he moved
@@ -111,7 +115,7 @@
       Departments
     ============================-->
 
-    <section id="services">
+    <section id="departments">
       <div class="container">
         <h2>Departments</h2>
         <p>These are the various <strong>Departments</strong> which are present at RNS institute of technology. The
@@ -121,53 +125,63 @@
           follow.</p>
         <br>
 
-        <div class="card-deck">
+        <div class="department-cards">
           <div class="card">
             <div class="card-header bg-transparent border-primary">CSE</div>
             <div class="card-body text-primary">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
+          
           </div>
+
           <div class="card">
-            <div class="card-header bg-transparent border-success">CSE</div>
-            <div class="card-body text-success">
+            <div class="card-header bg-transparent border-primary">ISE</div>
+            <div class="card-body text-primary">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
+          
           </div>
+
           <div class="card">
-            <div class="card-header bg-transparent border-danger">CSE</div>
-            <div class="card-body text-danger">
+            <div class="card-header bg-transparent border-primary">ECE</div>
+            <div class="card-body text-primary">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
             </div>
+          
+          </div>
+
+          <div class="card">
+            <div class="card-header bg-transparent border-primary">Mech</div>
+            <div class="card-body text-primary">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          
+          </div>
+
+          <div class="card">
+            <div class="card-header bg-transparent border-primary">EEE</div>
+            <div class="card-body text-primary">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          
+          </div>
+
+          <div class="card">
+            <div class="card-header bg-transparent border-primary">Civil</div>
+            <div class="card-body text-primary">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          
           </div>
         </div>
         <br>
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-header bg-transparent border-warning">CSE</div>
-            <div class="card-body text-warning">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header bg-transparent border-dark">CSE</div>
-            <div class="card-body text-dark">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header bg-transparent border-primary">CSE</div>
-            <div class="card-body text-primary">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
 
@@ -185,7 +199,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="why-us-img">
-              <img src="img/why-us.jpg" alt="" class="img-fluid">
+              <img src="./img/rnsit.jpg" alt="" class="img-fluid">
             </div>
           </div>
 
@@ -204,13 +218,6 @@
                 <li><i class="ion-android-checkmark-circle"></i>Promoting excellence in Teaching, Research and
                   Consultancy that galvanizes academic consciousness among Faculty and Students
                 </li>
-                <li><i class="ion-android-checkmark-circle"></i>Exposing Students to emerging frontiers of knowledge in
-                  various domains and make them suitable for Industry, Entrepreneurship, Higher studies, and Research
-                  and Development
-                </li>
-                <li><i class="ion-android-checkmark-circle"></i>Providing freedom of action and choice for all the Stake
-                  holders with better visibility
-                </li>
               </ul>
             </div>
           </div>
@@ -221,7 +228,7 @@
 
     <!-- call for admissions -->
 
-    <div class="contact-us">
+    <div id="contact" class="contact-us">
       <div class="col-left">
         <h3>Call for admissions</h3>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -235,78 +242,86 @@
 
     <!-- Gallery -->
 
-    <div class="container">
-      <ul id="portfolio-flters">
-        <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".filter-app">Fest</li>
-        <li data-filter=".filter-card">Meets</li>
-      </ul>
+    <div id="event" class="container">
+      <h1>Events</h1>
 
-      <div class="row gallery filter-app">
-        <div class="col-lg-4 col-md-6 card card-container p-2">
-          <img class="card-img-top gallery-img" src="img/portfolio/app1.jpg" alt="Card image cap">
+      <div class="event-gallery">
+        <div class="card card-container p-0">
+          <img src="img/portfolio/img1.jpg" alt="Card image cap">
           <div class="overlay">
-            <span class="text">Hello World</span>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 card card-container p-2">
-          <img class="card-img-top gallery-img" src="img/portfolio/app2.jpg" alt="Card image cap">
+        
+        <div class="card card-container p-0">
+          <img src="img/portfolio/img2.jpg" alt="Card image cap">
           <div class="overlay">
-            <div class="text">Hello World</div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 card card-container p-2">
-          <img class="card-img-top gallery-img" src="img/portfolio/app3.jpg" alt="Card image cap">
+
+        <div class="card card-container p-0">
+          <img src="img/portfolio/img3.jpg" alt="Card image cap">
           <div class="overlay">
-            <div class="text">Hello World</div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 card card-container p-2">
-          <img class="card-img-top gallery-img" src="img/portfolio/app3.jpg" alt="Card image cap">
+
+        <div class="card card-container p-0">
+          <img src="img/portfolio/img4.jpg" alt="Card image cap">
           <div class="overlay">
-            <div class="text">Hello World</div>
           </div>
         </div>
+
+        <div class="card card-container p-0">
+          <img src="img/portfolio/img5.jpg" alt="Card image cap">
+          <div class="overlay">
+          </div>
+        </div>
+
+        <div class="card card-container p-0">
+          <img src="img/portfolio/img6.jpg" alt="Card image cap">
+          <div class="overlay">
+          </div>
+        </div>
+
       </div>
     </div>
 
 
     <!-- Faculty -->
 
-    <div class="container faculty_container">
+    <div id="hod" class="container faculty_container">
       <div class="faculty">
-        <span class="heading">HOD's</span>
+        <span class="heading">HODs</span>
         <span class="sub-heading">Head of Departments at RNS Instititute of Technology</span>
         <div class="faculty-cards">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="./img/team-1.jpg" alt="Card image cap">
             <div class="card-body">
-              Walter White<br>
-              <i>Chief Executive Officer</i>
+              Dr Kiran P<br>
+              <i>HOD, Dept of CSE</i>
             </div>
           </div>
 
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="./img/team-2.jpg" alt="Card image cap">
             <div class="card-body">
-              Walter White<br>
-              <i>Chief Executive Officer</i>
+              Dr. Vipula Singh<br>
+              <i>HOD, Dept of ECE</i>
             </div>
           </div>
 
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="./img/team-3.jpg" alt="Card image cap">
             <div class="card-body">
-              Walter White<br>
-              <i>Chief Executive Officer</i>
+              Dr. Pratap Kumar M T<br>
+              <i>HOD, Dept of Civil</i>
             </div>
           </div>
 
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="./img/team-4.jpg" alt="Card image cap">
             <div class="card-body">
-              Walter White<br>
-              <i>Chief Executive Officer</i>
+              Dr. Suresh L<br>
+              <i>HOD, Dept of ISE</i>
             </div>
           </div>
         </div>
@@ -329,6 +344,9 @@
     ============================-->
 
   </main>
+  <!-- main javascript -->
+  <script src="./js/main.js"></script>
+
 </body>
 
 </html>

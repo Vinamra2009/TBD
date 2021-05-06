@@ -40,7 +40,6 @@ h6 {
 #topbar {
   padding: 0 0 10px 0;
   font-size: 14px;
-  transition: all 0.5s;
 }
 
 #topbar .social-links {
@@ -51,11 +50,11 @@ h6 {
   color: #b6a352;
   padding: 4px 12px;
   display: inline-block;
-  line-height: 1px;
 }
 
 #topbar .social-links a:hover {
   color: #1bb1dc;
+  transition: all 0.5s;
 }
 
 
@@ -74,15 +73,34 @@ h6 {
   right: 0;
 }
 
+#header .logo{
+  position: fixed;
+  top: 0;
+}
+
 #header .logo img {
   padding: 0;
-  margin: -70px 0;
-  max-height: 230px;
+  max-height: 130px;
 }
 
 .main-pages {
   margin-top: 60px;
 }
+
+
+.header-scrolled{
+  background: rgba(255,255,255,0.8);
+  height: 80px!important;
+  box-shadow: 2px 0 10px 2px rgba(40,40,40,0.1);
+}
+
+.header-scrolled #topbar{
+  display: none;
+}
+.header-scrolled .logo img{
+  display: none;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -129,7 +147,10 @@ h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+  /* background:url("../img/intro-bg.jpg") center top no-repeat; */
+  background:url("../img/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -145,8 +166,7 @@ h6 {
   color: #b6a352;
 }
 
-#intro .intro-info .btn-get-started,
-#intro .intro-info .btn-services {
+#intro .intro-info .btn-get-started{
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -190,15 +210,26 @@ h6 {
 # Departments
 --------------------------------------------------------------*/
 
-.card {
+#departments .card {
   margin: 0;
   padding: 1.7rem 1.2rem;
   font-family: 'Oswald', sans-serif;
-  box-shadow: 0 0 21px rgba(0, 0, 0, .27);
+  box-shadow: 0 2px 14px 2px rgba(134, 133, 133, 0.27);
   border-radius: 3%;
   font-weight: 300;
 }
 
+.department-cards{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 5% 5%;
+}
+
+.department-cards .card:hover{
+  transform: scale(1.05);
+  transition: all 0.5s;
+  cursor: pointer;
+}
 
 /* Why Us Section
 --------------------------------*/
@@ -254,101 +285,84 @@ h6 {
 
 /* GALLERY */
 
-#portfolio-flters {
-  padding: 0;
-  margin: 5px 0 35px 0;
-  list-style: none;
+#event{
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+#event h1{
   text-align: center;
+  margin-bottom: 40px;
 }
 
-#portfolio-flters li {
-  cursor: pointer;
-  margin: 15px 15px 15px 0;
-  display: inline-block;
-  padding: 6px 10px;
-  font-size: 16px;
-  line-height: 20px;
-  color: #413e66;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
+.event-gallery{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 5% 5%;
 }
 
-#portfolio-flters li:hover,
-#portfolio-flters li.filter-active {
-  color: #1bb1dc;
-}
-
-.overlay {
-  position: absolute;
-  top: 8px;
-  bottom: 10px;
-  left: 8px;
-  right: 12px;
-  height: 94%;
-  width: 96%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-container:hover .overlay {
-  opacity: 0.7;
-}
-
-.card {
-  border: none;
-}
-
-.card-container {
-  position: relative;
-  padding: 0;
-  margin: 0;
-}
-
-.text {
-  color: white;
-  font-size: 22px;
-  font-weight: 300;
-  /* display: flex;
-justify-content: center; */
-}
-
-.card-img-top {
-  height: 250px;
+.event-gallery img{
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
+.event-gallery .card,.event-gallery img{
+  border-radius: 5px;
+  border: none;
+}
+
+.event-gallery .card{
+  box-shadow: 0 0px 4px 2px rgba(0,0,0,0.3);
+}
+
+.event-gallery .card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 7px 3px rgba(40,40,40,0.5);
+  transition: all 0.5s;
+  cursor: pointer;
+}
 
 /****** Faculty ******/
 
-.faculty .heading {
+.faculty .heading{
   margin: 0 0 15px 0;
   font-size: 36px;
   color: #413E66;
 }
 
-.faculty .sub-heading {
-  margin: 0 0 50px;
+.faculty .sub-heading{
+  margin: 0  0 50px;
 }
 
-.faculty {
-  margin: 20px 0 40px 0;
+.faculty{
+  margin:20px 0 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.faculty-cards {
+.faculty-cards{
   display: flex;
 }
 
-.card .card-body i {
-  font-size: 12px;
+.faculty .card{
+  position: relative;
+  margin-left: 20px;
 }
 
+.faculty .card .card-body{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  background: rgba(0,0,0,0.7);
+}
+
+.faculty .card .card-body i{
+  font-size: 12px;
+}
 
 /****** copyright ******/
 

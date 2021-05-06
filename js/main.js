@@ -1,11 +1,11 @@
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("header").style.top = "0";
+  if (currentScrollPos > 100) {
+    document.getElementById("header").classList.add("header-scrolled");
   } else {
-    document.getElementById("header").style.top = "-150px";
+    document.getElementById("header").classList.remove("header-scrolled");
   }
-  prevScrollpos = currentScrollPos;
+  // prevScrollpos = currentScrollPos;
 }
 
